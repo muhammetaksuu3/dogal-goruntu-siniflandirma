@@ -120,4 +120,3 @@ yapay_zeka_proje/
 ## 👤 Geliştirici
 
 **Muhammet Aksu**  
-Bilgisayar Mühendisliği
