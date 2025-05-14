@@ -21,13 +21,15 @@ def load_model():
     return model, device
 
 # Görüntüyü sınıflandır
-def predict(image, model, device):
+def predict_with_probs(image, model, device, class_names):
     transform = get_transforms()
     image = transform(image).unsqueeze(0).to(device)
     with torch.no_grad():
         outputs = model(image)
-        _, predicted = torch.max(outputs, 1)
-    return CLASS_NAMES[predicted.item()]
+        probabilities = torch.nn.functional.softmax(outputs[0], dim=0)
+        predicted_idx = torch.argmax(probabilities).item()
+    return predicted_idx, probabilities.cpu().numpy()
+
 
 # Performans değerlendirme fonksiyonu (test verisi üzerinden)
 def evaluate_model_streamlit(model, test_loader, device, class_names):
@@ -78,8 +80,14 @@ if uploaded_file is not None:
     st.image(image, caption="Yüklenen Görsel", use_container_width=True)
 
     if st.button("Tahmin Et"):
-        prediction = predict(image, model, device)
-        st.success(f"Tahmin Edilen Sınıf: **{prediction}**")
+        predicted_idx, probabilities = predict_with_probs(image, model, device, CLASS_NAMES)
+        predicted_class = CLASS_NAMES[predicted_idx]
+
+        st.success(f"Tahmin Edilen Sınıf: **{predicted_class}**")
+
+        st.subheader("📊 Sınıf Olasılıkları")
+        for i, prob in enumerate(probabilities):
+            st.write(f"{CLASS_NAMES[i]}: {prob * 100:.2f}%")
 
 # Performans raporunu gösteren buton
 if st.button("📊 Model Performansını Göster"):
