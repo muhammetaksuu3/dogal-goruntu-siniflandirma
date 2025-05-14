@@ -84,7 +84,7 @@ streamlit run app.py
 
 ## 🖼️ Arayüz Görseli
 
-![Uygulama Ekranı](./screenshot.png)
+![Uygulama Ekranı](./arayuz.png)
 
 ---
 
