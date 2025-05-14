@@ -19,12 +19,12 @@ Model, Intel Image Classification veri setiyle eğitilmiş olup şu 6 sınıfı 
 
 | Sınıf      | Açıklama              |
 |------------|------------------------|
-| buildings 🏢 | Binalar, yapılar       |
-| forest 🌲    | Ormanlık alanlar       |
-| glacier ❄️   | Buzullar ve kar        |
-| mountain ⛰️  | Dağlık bölgeler        |
-| sea 🌊       | Deniz manzaraları      |
-| street 🛣️    | Şehir sokakları        |
+| buildings  | Binalar, yapılar       |
+| forest     | Ormanlık alanlar       |
+| glacier ❄   | Buzullar ve kar        |
+| mountain ⛰  | Dağlık bölgeler        |
+| sea        | Deniz manzaraları      |
+| street 🛣    | Şehir sokakları        |
 
 ---
 
@@ -120,4 +120,3 @@ yapay_zeka_proje/
 ## 👤 Geliştirici
 
 **Muhammet Aksu**  
-Bilgisayar Mühendisliği
