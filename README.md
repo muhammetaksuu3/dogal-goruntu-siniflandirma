@@ -84,7 +84,7 @@ streamlit run app.py
 
 ## 🖼️ Arayüz Görseli
 
-![Uygulama Ekranı](./arayuz.png)
+![Uygulama Ekranı](./screenshots/arayuz.png)
 
 ---
 
@@ -92,7 +92,7 @@ streamlit run app.py
 
 ## 🖼️ Sonuç Görseli
 
-![Uygulama Ekranı](./sonuc.png)
+![Uygulama Ekranı](./screenshots/sonuc.png)
 
 ---
 
