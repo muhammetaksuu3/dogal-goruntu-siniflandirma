@@ -88,6 +88,14 @@ streamlit run app.py
 
 ---
 
+---
+
+## 🖼️ Sonuç Görseli
+
+![Uygulama Ekranı](./sonuc.png)
+
+---
+
 ## 🧱 Kullanılan Teknolojiler
 
 - Python
