@@ -123,7 +123,7 @@ yapay_zeka_proje/
 │   └── arayuz.png
 │   └── sonuc.png
 │   └── sonuc2.png
-│   └── demoVideosu 
+├── demoVideosu 
 └── README.md
 ```
 
