@@ -119,7 +119,11 @@ yapay_zeka_proje/
 │   └── model.pth
 ├── dataset/
 │   └── seg_train / seg_test
-├── screenshot.png
+├── screenshot
+│   └── arayuz.png
+│   └── sonuc.png
+│   └── sonuc2.png
+│   └── demoVideosu 
 └── README.md
 ```
 
